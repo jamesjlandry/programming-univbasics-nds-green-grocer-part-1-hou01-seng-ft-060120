@@ -17,8 +17,9 @@ def consolidate_cart(cart)
   cart.each do |item|
     if !purchases[:item] == item[:item]
     purchases = item.merge(counts)
-    binding.pry
+    
     end
+    binding.pry
   end
 end
 

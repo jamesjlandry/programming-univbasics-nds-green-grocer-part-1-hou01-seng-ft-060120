@@ -11,6 +11,7 @@ grocery_item
 end
 
 def consolidate_cart(cart)
+  receipt = []
   
 
 end

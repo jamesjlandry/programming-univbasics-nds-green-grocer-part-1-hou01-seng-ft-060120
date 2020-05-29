@@ -12,8 +12,10 @@ end
 
 def consolidate_cart(cart)
   receipt = []
-  purchases = {}
-  
+  purchases = {count: 0}
+  cart.each do |item|
+    purchases.unshift item
+  end
 
 end
 

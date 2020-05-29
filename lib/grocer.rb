@@ -2,7 +2,7 @@ require "pry"
 
 def find_item_by_name_in_collection(name, collection)
   grocery_item = {}
-  collection[:item].each do |hash|
+  collection.each do |hash|
   puts hash
   binding.pry
 end

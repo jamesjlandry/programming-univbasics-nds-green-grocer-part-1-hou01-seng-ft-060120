@@ -4,12 +4,14 @@ def find_item_by_name_in_collection(name, collection)
   grocery_item = {}
   collection.each do |hash|
   if hash[:item] == name
-    return hash
+    grocery_item = hash
+  end
+  if hash[:item] == name
+    return grocery_item
   else
     return nil
-    binding.pry
   end
-  end
+end
 end
 
 def consolidate_cart(cart)

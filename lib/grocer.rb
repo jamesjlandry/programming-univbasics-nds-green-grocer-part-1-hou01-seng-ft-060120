@@ -14,6 +14,7 @@ def consolidate_cart(cart)
   receipt = []
   counts = {count: 0}
   cart.each do |item|
+    if item[:item]
     purchases = item.merge(counts)
     binding.pry
   end

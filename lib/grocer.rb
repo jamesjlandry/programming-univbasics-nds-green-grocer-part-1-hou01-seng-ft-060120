@@ -16,7 +16,7 @@ def consolidate_cart(cart)
   cart.each do |item|
     purchases = find_item_by_name_in_collection(item[:item], receipt)
     if purchases 
-      purchases
+      purchases[:count] 
     binding.pry
   end
 end

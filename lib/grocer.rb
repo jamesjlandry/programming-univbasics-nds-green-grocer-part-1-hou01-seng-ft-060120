@@ -7,6 +7,7 @@ def find_item_by_name_in_collection(name, collection)
     grocery_item = hash
   end
 end
+grocery_item
 end
 
 def consolidate_cart(cart)

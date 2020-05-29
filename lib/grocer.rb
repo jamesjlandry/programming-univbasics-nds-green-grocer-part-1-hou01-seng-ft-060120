@@ -12,6 +12,7 @@ end
 
 def consolidate_cart(cart)
   receipt = []
+  purchases = {}
   
 
 end

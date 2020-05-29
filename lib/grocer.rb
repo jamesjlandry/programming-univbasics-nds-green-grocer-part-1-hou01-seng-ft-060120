@@ -15,6 +15,7 @@ def consolidate_cart(cart)
   purchases = {}
   cart.each do |item|
     purchases = find_item_by_name_in_collection(item[:item], receipt)
+    if purchases 
     binding.pry
   end
 end

@@ -4,7 +4,7 @@ def find_item_by_name_in_collection(name, collection)
   grocery_item = {}
   collection.each do |hash|
   if hash[:item] == name
-    grocery_item = name
+    grocery_item = hash
   binding.pry
 end
 end

@@ -19,6 +19,7 @@ def consolidate_cart(cart)
       purchases[:count] += 1
     else
       item[:count] = 1
+      
     binding.pry
   end
 end

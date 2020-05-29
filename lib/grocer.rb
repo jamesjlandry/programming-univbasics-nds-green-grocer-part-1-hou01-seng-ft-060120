@@ -15,6 +15,7 @@ def consolidate_cart(cart)
   purchases = {count: 0}
   cart.each do |item|
     purchases.unshift item
+    binding.pry
   end
 
 end

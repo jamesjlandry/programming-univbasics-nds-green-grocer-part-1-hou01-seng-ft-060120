@@ -3,7 +3,8 @@ require "pry"
 def find_item_by_name_in_collection(name, collection)
   grocery_item = {}
   collection.each do |hash|
-  puts hash[:item]
+  if hash[:item] == name
+    grocery_item = name
   binding.pry
 end
 end

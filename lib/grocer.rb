@@ -12,9 +12,9 @@ end
 
 def consolidate_cart(cart)
   receipt = []
-  purchases = {count: 0}
+  counts = {count: 0}
   cart.each do |item|
-    purchases.merge(item)
+    purchases = counts.merge(item)
     binding.pry
   end
 

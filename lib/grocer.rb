@@ -2,6 +2,7 @@ require "pry"
 
 def find_item_by_name_in_collection(name, collection)
   grocery_item = {}
+  not_found = nil
   collection.each do |hash|
   if hash[:item] == name
     grocery_item = hash
@@ -9,7 +10,7 @@ def find_item_by_name_in_collection(name, collection)
   if hash[:item] == name
     return grocery_item
   else
-    return nil
+    return not_found
   end
 end
 end

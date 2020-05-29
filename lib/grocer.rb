@@ -14,7 +14,7 @@ def consolidate_cart(cart)
   receipt = []
   purchases = {}
   cart.each do |item|
-    purchases = find_item_by_name_in_collection(item[:item], )
+    purchases = find_item_by_name_in_collection(item[:item], receipt)
     binding.pry
   end
 end

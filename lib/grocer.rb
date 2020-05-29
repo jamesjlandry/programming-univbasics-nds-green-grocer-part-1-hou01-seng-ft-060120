@@ -17,6 +17,8 @@ def consolidate_cart(cart)
     purchases = find_item_by_name_in_collection(item[:item], receipt)
     if purchases 
       purchases[:count] += 1
+    else
+      
     binding.pry
   end
 end
